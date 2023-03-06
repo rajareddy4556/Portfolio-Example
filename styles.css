@@ -2,6 +2,15 @@ body {
   background: rgb(255, 255, 255);
   background-size: cover;
   background-position: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.image1 {
+position: relative;
+left: 800px;
+max-width: 100%;
 }
 .main-nav {
     list-style: none;
@@ -12,13 +21,10 @@ body {
     right: 20px;
   }
   h1{
-    color: rgb(0, 0, 0);
+    color: rgb(19, 0, 223);
     font-size: 20px;
   }
-  footer{
-    position: relative;
-    top: 600px;
-  }
+  
   p{
     color: #000000;
     position: relative;
@@ -29,7 +35,7 @@ body {
   p1{
     position: relative;
     left: 100px;
-    top: 100px;
+    bottom: 780px;
     font-size: 20px;
     color: #0e0000;
   }

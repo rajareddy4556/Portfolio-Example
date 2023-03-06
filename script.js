@@ -1,4 +1,4 @@
-// smooth scrolling
+
 const navLinks = document.querySelectorAll('nav a');
 
 navLinks.forEach(link => {
@@ -11,7 +11,6 @@ navLinks.forEach(link => {
   });
 });
 
-// form submission
 const form = document.querySelector('form');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
@@ -24,28 +23,27 @@ form.addEventListener('submit', event => {
     email: emailInput.value,
     message: messageInput.value
   };
-  console.log(formData); // do something with the form data, like sending it to a server or displaying it on the page
+  console.log(formData); 
   form.reset();
 });
 function validateForm() {
-  // Get the values from the form inputs
+  
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
 
-  // Check if any of the fields are empty
   if (name === "" || email === "" || message === "") {
     alert("Please fill in all fields.");
     return false;
   }
 
-  // Check if the email is in a valid format
+  
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     alert("Please enter a valid email address.");
     return false;
   }
 
-  // If all checks pass, return true to submit the form
   return true;
 }
+
